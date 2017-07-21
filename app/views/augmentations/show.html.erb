@@ -1,0 +1,78 @@
+<div class="row">
+<div class="col-md-12">
+<h1>
+    <strong><%= @augmentation.title %>  </strong>
+</h1>
+   </div>   </div>
+
+ <div class="row">
+ <div class="col-md-12">
+<h3>
+  <strong>Description:</strong>
+  <%= @augmentation.description %>
+</h3>
+  </div>   </div>
+
+
+  <br/>
+<div class="row">
+  <div class="col-md-6">
+    <p>
+      <strong>References:</strong><br/>
+      <ul>
+      <% @references.each do |sc| %>
+        <li><a href="<%= sc %>"><%= sc %></a>
+      <% end %>
+      </ul>
+    </p>
+
+  </div>
+    <div class="col-md-6">
+    <strong>Configuration:</strong><br/>
+  
+    <% @configurations.each do |sc| %>
+      <%= sc %><br/>
+  <% end %>
+  
+</p>
+  </div>
+    </div>
+
+  <div class="row">
+    <div class="col-md-4">
+<p>
+  <strong>Conceptual Model:</strong><br/>
+  <% @conceptualModel.each do |sc| %>
+      <img src="<%= sc %>" alt="Conceptual Model Image Not Found" style="max-width:200px;max-height:auto;" hspace="20">
+  <% end %>
+</p>
+  </div>
+  <div class="col-md-4">
+<p>
+  <strong>Design Diagram:</strong><br/>
+    <% @designDiagrams.each do |sc| %>
+      <img src="<%= sc %>" alt="Design Diagram Image Not Found" style="max-width:200px;max-height:auto;" hspace="20">
+  <% end %>
+</p>
+  </div>
+  <div class="col-md-4">
+<p>
+  <strong>Screenshot:</strong><br/>
+  <% @screenshots.each do |sc| %>
+      <img src="<%= sc %>" alt="Screenshot Image Not Found" style="max-width:200px;max-height:auto;" hspace="20">
+  <% end %>
+</p>
+  </div>
+
+    </div>
+
+
+<br/><br/>
+<div class="row">
+  <div class="col-md-3">
+<p><%= link_to 'List of Augmentations', augmentations_path %></p></div>
+  <div class="col-md-3">
+<p><%= link_to 'Edit', edit_augmentation_path %></p></div>
+
+  <div class="col-md-6">
+<p><a href="/augmentation/<%= @augmentation.id %>/remove">Delete</a></p></div></div>

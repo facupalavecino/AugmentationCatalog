@@ -1,0 +1,50 @@
+<h1>New Augmentation</h1>
+
+<br/>
+<%= form_for :augmentation, url: augmentations_path, :html => { :multipart => true } do |f| %>
+  <p>
+    <strong>Title</strong><br>
+    <%= f.text_field :title, :size => 50  %>
+  </p>
+ 
+  <p>
+    <strong>Description</strong><br>
+    <%= f.text_area :description, :size => 50 %>
+  </p>
+
+    <p>
+    <strong>References</strong><br>
+    <%= f.text_area :references, :size => 50 %>
+  </p>
+
+    <p>
+    <strong>Conceptual Model</strong><br>
+    <%= f.text_area :conceptualModel, :size => 50 %>
+  </p>
+
+      <p>
+    <strong>Configuration</strong><br>
+    <%= f.text_area :configuration, :size => 50 %>
+  </p>
+
+    <p>
+    <strong>Design Diagram</strong><br>
+    <%= f.text_area :designDiagram, :size => 50 %>
+  </p>
+
+    <p>
+    <strong>Screenshot</strong><br>
+    <%= f.text_area :screenshot %>
+  </p>
+ 
+
+
+  #<%= f.file_field :screenshot %>
+
+
+
+  <p>
+    <%= f.submit %><br/><p><%= link_to 'Cancel', augmentations_path %></p>
+  </p>
+<% end %>
+

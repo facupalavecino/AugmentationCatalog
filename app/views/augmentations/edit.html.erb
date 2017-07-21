@@ -1,0 +1,44 @@
+<h1>Editing Augmentation</h1>
+
+<br/>
+<%= form_for :augmentation, url: augmentation_path, :method => :PUT do |f| %>
+  <p>
+    <strong>Title</strong><br>
+    <%= f.text_field :title %>
+  </p>
+ 
+  <p>
+    <strong>Description</strong><br>
+    <%= f.text_area :description %>
+  </p>
+
+    <p>
+    <strong>References</strong><br>
+    <%= f.text_area :references %>
+  </p>
+
+    <p>
+    <strong>Conceptual Model</strong><br>
+    <%= f.text_area :conceptualModel %>
+  </p>
+
+      <p>
+    <strong>Configuration</strong><br>
+    <%= f.text_area :configuration %>
+  </p>
+
+    <p>
+    <strong>Design Diagram</strong><br>
+    <%= f.text_area :designDiagram %>
+  </p>
+
+    <p>
+    <strong>Screenshot</strong><br>
+    <%= f.text_area :screenshot %>
+  </p>
+ 
+  <p>
+    <%= f.submit %><br/><p><%= link_to 'Cancel', augmentations_path %></p>
+  </p>
+<% end %>
+

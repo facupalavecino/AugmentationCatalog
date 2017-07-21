@@ -1,0 +1,2 @@
+module AugmentationsHelper
+end

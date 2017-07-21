@@ -1,0 +1,28 @@
+<div class="row">
+<div class="col-md-12"><h1><strong>List of Augmentations</strong></h1>
+</div></div>
+ 
+<div class="row">
+<div class="col-md-3">
+    <p><strong>Name</strong></p></div>
+    <div class="col-md-6">
+    <p><strong>Description</strong></p></div>
+
+<div class="col-md-3"></div>
+
+</div>
+ 
+  <% @augmentation.each do |augmentation| %>
+ <div class="row">
+<div class="col-md-3">
+    <p><%=augmentation.title %></p></div>
+    <div class="col-md-6">
+    <p><%=augmentation.description %></p></div>
+
+<div class="col-md-3"><%= link_to 'See details', augmentation_path(augmentation) %></div>
+
+</div>
+     
+  <% end %>
+<br/>
+<p><%= link_to 'Summit augmentation', new_augmentation_path %></p>
