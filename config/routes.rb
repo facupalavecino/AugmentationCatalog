@@ -6,5 +6,12 @@ Rails.application.routes.draw do
 
   get 'augmentation/:id/remove', to: 'augmentations#delete'
   root 'welcome#index'
+
+  #Api definition
+  namespace :api, defaults: {format: :json},
+  					constraints: {subdomain: 'api'}, path: '/' do
+  	#List of resources
+  end
+
   
 end
