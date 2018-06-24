@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+
+	namespace :api do
+		scope module: :v1 do
+			resources :augmentations, only: [:index, :show, :create]
+		end
+	end
+
   get 'welcome/index'
   get 'augmentation/:id/edit', to: 'augmentations#editForm'
 
