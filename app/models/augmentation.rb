@@ -1,4 +1,5 @@
 class Augmentation < ApplicationRecord
+	has_one :augmentation_element
 
 #has_attached_file :screenshot, :styles => { :small => "150x150>" },
 #                  :url  => "/assets/augmentations/:id/:basename.:extension",

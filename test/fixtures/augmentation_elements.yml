@@ -1,0 +1,51 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  url: MyString
+  urlCompareType: MyString
+  template: MyString
+  h0xpath: MyString
+  h0pattern: MyString
+  h1xpath: MyString
+  h1pattern: MyString
+  h2xpath: MyString
+  h2pattern: MyString
+  n0xpath: MyString
+  n0pattern: MyString
+  m0xpath: MyString
+  m0pattern: MyString
+  m1xpath: MyString
+  m1pattern: MyString
+  m2xpath: MyString
+  m2pattern: MyString
+  f0xpath: MyString
+  f0pattern: MyString
+  f1xpath: MyString
+  f1pattern: MyString
+  f2xpath: MyString
+  f2pattern: MyString
+
+two:
+  url: MyString
+  urlCompareType: MyString
+  template: MyString
+  h0xpath: MyString
+  h0pattern: MyString
+  h1xpath: MyString
+  h1pattern: MyString
+  h2xpath: MyString
+  h2pattern: MyString
+  n0xpath: MyString
+  n0pattern: MyString
+  m0xpath: MyString
+  m0pattern: MyString
+  m1xpath: MyString
+  m1pattern: MyString
+  m2xpath: MyString
+  m2pattern: MyString
+  f0xpath: MyString
+  f0pattern: MyString
+  f1xpath: MyString
+  f1pattern: MyString
+  f2xpath: MyString
+  f2pattern: MyString
