@@ -43,7 +43,7 @@ class Api::V1::AugmentationsController < ActionController::API
 		p data
 		puts ""
 		@augmentation = Augmentation.new(
-			title: "Redmine",
+			title: params["_json"][0]["url"],
 			references: params["_json"][0]["url"],
 			configuration: params["_json"][0].to_json,
 			)
