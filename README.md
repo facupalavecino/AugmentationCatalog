@@ -18,6 +18,6 @@ There are 3 possible responses:
 - There is more than 1 configuration stored for that page. An array filled with the configurations' IDs is sent back.
 
 
-The following sequence diagram illustrates data flow between scripts and the catalog:
+A sequence diagram that illustrates data flow between scripts and the catalog is available at:
 
-![alt text](app/assets/images/Integración Plugin de augmentación con Repositorio.png?raw=true "Title")
+AugmentationCatalog/app/assets/images/Integración Plugin de augmentación con Repositorio.png
